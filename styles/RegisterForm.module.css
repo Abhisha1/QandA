@@ -1,0 +1,40 @@
+.registerContainer{
+  background-color: white;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  width: 75%;
+  height: 100%;
+  padding: 15em 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
+
+.formFieldContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formField{
+  border-radius: 5em;
+  background-color: var(--grey);
+  cursor: text;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.formFieldText{
+  border: 1px solid transparent;
+  font-family: Inner;
+  font-size: 2rem;
+  border-radius: 1em;
+  background-color: var(--grey);
+  cursor: text;
+  padding: 0.7em
+}
+.formFieldText:focus-visible{
+  outline: 0cm;
+  border-color: var(--accent);
+}
