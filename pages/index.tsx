@@ -69,9 +69,9 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.container}>
           <Carousel nSlides={3} content={[
-            { title: "Submit questions", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "https://dummyimage.com/600x400/000/fff" },
-            { title: "Test yourself", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "https://dummyimage.com/600x400/000/fff" },
-            {title: "Discuss solutions", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "https://dummyimage.com/600x400/000/fff"}
+            { title: "Submit questions", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "/../public/Subject Questions.svg" },
+            { title: "Test yourself", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "/../public/Discussion.svg" },
+            {title: "Discuss solutions", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "/../public/Mock Exam.svg"}
           ]}/>
         </div>
         <div className={styles.container} ref={registerContainer}>

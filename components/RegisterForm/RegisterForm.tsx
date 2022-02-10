@@ -43,7 +43,8 @@ function RegisterForm() {
                     type="text"
                     placeholder='First Name'
                     value={fields.firstName}
-                    onChange={onChange("firstName")}
+                            onChange={onChange("firstName")}
+                            autoComplete="given-name"
                 required
                 />
             </div>
@@ -54,7 +55,8 @@ function RegisterForm() {
                     type="text"
                     placeholder='Last Name'
                     value={fields.lastName}
-                    onChange={onChange("lastName")}
+                            onChange={onChange("lastName")}
+                            autoComplete="family-name"
                 required
                 />
             </div>
@@ -65,7 +67,8 @@ function RegisterForm() {
                     type="email"
                     placeholder='Email'
                     value={fields.email}
-                    onChange={onChange("email")}
+                            onChange={onChange("email")}
+                            autoComplete="email"
                 required
                 />
             </div>
