@@ -8,6 +8,7 @@ import graduationGraphic from '../public/lottie/opt2.json';
 import Lottie from "react-lottie";
 import { useRef } from 'react';
 import RegisterForm from '../components/RegisterForm/RegisterForm';
+import Carousel from '../components/Carousel/Carousel';
 
 const Home: NextPage = () => {
   const defaultOptions = {
@@ -67,9 +68,11 @@ const Home: NextPage = () => {
             </div>
         </div>
         <div className={styles.container}>
-        <h1 className={styles.title}>
-          Welcome  gsdsdsfdfgto <a href="https://nextjs.org">Nextfdddfg.js!</a>
-          </h1>
+          <Carousel nSlides={3} content={[
+            { title: "Submit questions", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "https://dummyimage.com/600x400/000/fff" },
+            { title: "Test yourself", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "https://dummyimage.com/600x400/000/fff" },
+            {title: "Discuss solutions", text: "Create questions on topics of your choosing, building a pool of questions for you and your classmates to use.", imgPath: "https://dummyimage.com/600x400/000/fff"}
+          ]}/>
         </div>
         <div className={styles.container} ref={registerContainer}>
         <h1 className={styles.title}>

@@ -33,6 +33,7 @@ function RegisterForm() {
 		};
 
     return (
+        <form className={styles.formContainer}>
         <div className={styles.registerContainer}>
         <div className={styles.formFieldContainer}>
             <div className={styles.formField}>
@@ -75,7 +76,8 @@ function RegisterForm() {
                     type="password"
                     placeholder='Password'
                     value={fields.password}
-                    onChange={onChange("password")}
+                            onChange={onChange("password")}
+                            autoComplete="new-password"
                 required
                 />
             </div>
@@ -86,14 +88,16 @@ function RegisterForm() {
                     type="password"
                     placeholder='Confirm Password'
                     value={fields.confirmPassword}
-                    onChange={onChange("confirmPassword")}
+                            onChange={onChange("confirmPassword")}
+                            autoComplete="new-password"
                 required
                 />
             </div>
 
         </div>
         <Button type="primary" handler={() => console.log("hello")} label="Register" />
-        </div>
+            </div>
+            </form>
     )
 }
 
