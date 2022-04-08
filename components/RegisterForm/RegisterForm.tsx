@@ -32,8 +32,12 @@ function RegisterForm() {
 			}));
 		};
 
+    const onSubmit = (e: Event): void => {
+        e.preventDefault();
+
+    }
     return (
-        <form className={styles.formContainer}>
+        <form className={styles.formContainer} onSubmit={() => onSubmit}>
         <div className={styles.registerContainer}>
         <div className={styles.formFieldContainer}>
             <div className={styles.formField}>

@@ -52,7 +52,8 @@ const Home: NextPage = () => {
             options={hatAnimationOptions}
             height={400}
             width={500}
-            isClickToPauseDisabled          />
+            isClickToPauseDisabled
+          />
         <h1 className={styles.title}>
           Quiz. Learn. Collaborate. 
           </h1>
@@ -63,7 +64,8 @@ const Home: NextPage = () => {
             <Lottie
             options={defaultOptions}
             height={100}
-            width={100}
+              width={100}
+              isClickToPauseDisabled
             />
             </div>
         </div>
